@@ -2,15 +2,15 @@
 
 
 *{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: montserrat;
-  }
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
   nav{
     background: #101010;
     height: 80px;
@@ -69,8 +69,6 @@
 h1{
     color: black;
     size: 50px; 
-    text-decoration:underline;
-    text-decoration-color:slateblue;
     text-align: center;
     font-family: 'Times New Roman', Times, serif
 }
@@ -88,24 +86,21 @@ h1{
   font-family: "Inter", sans-serif;
 }
 .propertiesTwo {
-  display: flex;
-  height: 1vh;
-  justify-content: center;
+  height: 0vh;
+  text-align: center;
 }
 h2 {
-  color: #fff;
+  color: #000000;
   font-size: 2rem;
   font-weight: 600;
 }
 h2 span {
-  color: #BD53ED;
-  position: relative;
+  color: #000000;
 }
 h2 span::before {
   content: "";
   height: 30px;
   width: 2px;
-  position: absolute;
   top: 50%;
   right: -8px;
   background: #BD53ED;
