@@ -1,5 +1,5 @@
 const dynamicText = document.querySelector("h2 span");
-const words = ["Power your playtime!", "Where Dreams Level Up!", "Crafting Digital Adventures!", "Your Gateway to Gaming Excellence!"];
+const words = ["Power your playtime", "Where Dreams Level Up", "Crafting Digital Adventures", "Your Gateway to Gaming Excellence"];
 
 // Variables to track the position and deletion status of the word
 let wordIndex = 0;
@@ -15,17 +15,17 @@ const typeEffect = () => {
     if (!isDeleting && charIndex < currentWord.length) {
         // If condition is true, type the next character
         charIndex++;
-        setTimeout(typeEffect, 200);
+        setTimeout(typeEffect, 100);
     } else if (isDeleting && charIndex > 0) {
         // If condition is true, remove the previous character
         charIndex--;
-        setTimeout(typeEffect, 100);
+        setTimeout(typeEffect, 50);
     } else {
         // If word is deleted then switch to the next word
         isDeleting = !isDeleting;
         dynamicText.classList.remove("stop-blinking");
         wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
-        setTimeout(typeEffect, 1200);
+        setTimeout(typeEffect, 600);
     }
 }
 
