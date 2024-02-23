@@ -1,5 +1,5 @@
 const dynamicText = document.querySelector("h2 span");
-const words = ["Power your playtime", "Where Dreams Level Up", "Crafting Digital Adventures", "Your Gateway to Gaming Excellence"];
+const words = ["GATEWAY", "WAY", "Crafting Digital Adventures", "Your Gateway to Gaming Excellence"];
 
 // Variables to track the position and deletion status of the word
 let wordIndex = 0;
